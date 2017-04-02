@@ -21,15 +21,39 @@
     <li style="border: 1px solid #ccc;height: 50px;color: #000"><a href="ok.html" style="color: #000"></a>支付</li>
   </ul>
 </div>
-<div 
-  position: absolute;bottom: 0px">
-<ul style="position: absolute;bottom: 0px">
-      <li style="width: 25%;position: absolute;left:25%;bottom: 0px"><a href="home.html">Home</a></li>
-      <li style="width: 25%;position: absolute;left:75%;bottom: 0px"><a href="about.html">About</a></li>
-      <li style="width: 25%;position: absolute;right:75%;bottom: 0px"><a href="projects.html">Projects</a></li>
-      <li style="width: 25%;position: absolute;right:25%;bottom: 0px"><a href="pay.html">Pay</a></li>
-    </ul>
-    </div>
+<nav class="nav-collapse" style="position: absolute;bottom: 0px">
+    <button id="home" >home</button>
+    <button id="about">about</button>
+    <button id="projects">projects</button>
+    <button id="pay">pay</button>
+    </nav>
+
+    <script>
+
+      // Init Responsive Nav
+      var nav = responsiveNav(".nav-collapse");
+
+
+  
+      // Toggle Nav
+      var home = document.getElementById("home");
+      home.addEventListener("click", function clickNextPage(){  
+        window.location.reload("home.html"); }, false);
+
+      // Open Nav
+      var about = document.getElementById("about");
+      about.addEventListener("click", function clickNextPage(){  
+        window.location.reload("about.html"); }, false);
+
+      // Close Nav
+      var projects = document.getElementById("projects");
+      projects.addEventListener("click", function clickNextPage(){  
+        window.location.reload("projects.html"); }, false);
+      
+      var pay = document.getElementById("pay");
+      pay.addEventListener("click", function clickNextPage(){  
+        window.location.reload("pay.html"); }, false);
+    </script>
 <script>
     var navigation = responsiveNav("nav", {customToggle: ".nav-toggle"});
   </script>
