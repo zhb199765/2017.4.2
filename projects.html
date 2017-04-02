@@ -27,11 +27,15 @@
     <li><a href="#">地址</a></li>
     <li><a href="#">付款</a></li>
   </ul>
+  <ul>
+      <li style="border: 1px solid #ccc;width:50px;height: 30px;color: #000"><a href="home.html">Home</a></li>
+      <li style="border: 1px solid #ccc;width:50px;height: 30px;color: #000"><a href="about.html">About</a></li>
+      <li style="border: 1px solid #ccc;width:50px;height: 30px;color: #000"><a href="projects.html">Projects</a></li>
+      <li style="border: 1px solid #ccc;width:50px;height: 30px;color: #000"><a href="pay.html">Pay</a></li>
+    </ul>
 </div>
 <script>
-  var navigation = responsiveNav("#nav");
-</script>
-  
-  
+    var navigation = responsiveNav("nav", {customToggle: ".nav-toggle"});
+  </script>
 </body>
 </html>
