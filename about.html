@@ -7,24 +7,52 @@
   <link rel="stylesheet" href="./responsive/style1.css">
   <script src="./responsive/responsive-nav.min.js"></script>
 </head>
+ <style>
+    a {
+      font-size: 36px;
+    }
+    
+    @media (max-width: 1000px) {
+      a {
+        font-size: 30px;
+      }
+    }
+    
+    @media (max-width: 800px) {
+      a {
+        font-size: 24px;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      a {
+        font-size: 18px;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      a {
+        font-size: 14px;
+      }
+    }
+  </style>
 <body>
 
-  <div role="main" class="main">
-    <a href="#nav" class="nav-toggle"></a>
+  <div style="text-align:center">
   <ul>
-    <li>hahah</a></li>
-    <li>aaaaa</a></li>
-    <li>sssss</a></li>
-    <li>ddddd</a></li>
+    <li ><a style=" color:#666">hahah</a></li>
+    <li ><a style=" color:#666">aaaaa</a></li>
+    <li ><a style=" color:#666">sssss</a></li>
+    <li ><a style=" color:#666">ddddd</a></li>
   </ul>
   
 </div>
-<div role="navigation" id="nav" class="nav-collapse" style="position: absolute;bottom: 0px;height: 50px">
-    <button onclick="{location.href='home.html'}" style="width: 24%;height: 50px;color: red">home</button>
-    <button onclick="{location.href='about.html'}" style="width: 24%;height: 50px;color: red">about</button>
-    <button onclick="{location.href='projects.html'}" style="width: 24%;height: 50px;color: red">projects</button>
-    <button onclick="{location.href='pay.html'}" style="width: 24%;height: 50px;color: red">pay</button>
-    </div>
+<div role="navigation" id="nav" class="nav-collapse" style="position: absolute;bottom: 0px;height:20px">
+    <button onclick="{location.href='home.html'}" style="width: 24%;height: 20px;color: red">home</button>
+    <button onclick="{location.href='about.html'}" style="width: 24%;height: 20px;color: red">about</button>
+    <button onclick="{location.href='projects.html'}" style="width: 24%;height: 20px;color: red">projects</button>
+    <button onclick="{location.href='pay.html'}" style="width: 24%;height: 20px;color: red">pay</button>
+  </div>
 <script>
     var navigation = responsiveNav("nav", {customToggle: ".nav-toggle"});
   </script>

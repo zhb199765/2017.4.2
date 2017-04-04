@@ -70,7 +70,7 @@ body {
 }
 
 .nav-collapse .alt a {
-  background: #555;
+  background: #111;
 }
 
 @media screen and (min-width: 40em) {

@@ -8,13 +8,38 @@
   <script src="./responsive/responsive-nav.min.js"></script>
 </head>
 <body>
-  
+  <style>
+    a {
+      font-size: 50px;
+    }
+    
+    @media (max-width: 1000px) {
+      a {
+        font-size: 40px;
+      }
+    }
+    
+    @media (max-width: 800px) {
+      a {
+        font-size: 36px;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      a {
+        font-size: 28px;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      a {
+        font-size: 20px;
+      }
+    }
+  </style>
 
-  <div role="main" class="main">
-    <a href="#nav" class="nav-toggle">Menu</a>
-    <ul>
-    <li style="border: 1px solid #ccc;height: 50px;color: #000;position: absolute;left: 30;right: 30"><a href="#" style="color: #000;position: absolute;left: 300px ;right: 300px">付款成功</a></li>
-   </ul>
+  <div style="text-align:center">
+    <a style="color: #000">付款成功</a>
    
   </div>
   <div role="navigation" id="nav" class="nav-collapse" style="position: absolute;bottom: 0px;height: 50px">

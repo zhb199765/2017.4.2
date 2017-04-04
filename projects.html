@@ -8,23 +8,52 @@
   <script src="./responsive/responsive-nav.min.js"></script>
 </head>
 <body>
+<style>
+    a {
+      font-size: 36px;
+    }
+    
+    @media (max-width: 1000px) {
+      a {
+        font-size: 30px;
+      }
+    }
+    
+    @media (max-width: 800px) {
+      a {
+        font-size: 24px;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      a {
+        font-size: 18px;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      a {
+        font-size: 14px;
+      }
+    }
+  </style>
    
-  <div role="main" class="main">
-    <a href="#nav" class="nav-toggle">Menu</a>
+  <div style="text-align:center">
   <ul>
-    <li><a href="#">价格</a></li>
-    <li><a href="#">实物图</a></li>
-    <li><a href="#">地址</a></li>
-    <li><a href="#">付款</a></li>
+    <li><a style=" color:#666">种植数据</a></li>
+    <li><a style=" color:#666">种植过程</a></li>
+    <li><a style=" color:#666">专家支持</a></li>
+    <li><a style=" color:#666">种植任务</a></li>
+    <li><a style=" color:#666">种植方案</a></li>
   </ul>
 
 </div>
-<div role="navigation" id="nav" class="nav-collapse" style="position: absolute;bottom: 0px;height: 50px">
-    <button onclick="{location.href='home.html'}" style="width: 24%;height: 50px;color: red">home</button>
-    <button onclick="{location.href='about.html'}" style="width: 24%;height: 50px;color: red">about</button>
-    <button onclick="{location.href='projects.html'}" style="width: 24%;height: 50px;color: red">projects</button>
-    <button onclick="{location.href='pay.html'}" style="width: 24%;height: 50px;color: red">pay</button>
-    </div>
+<div role="navigation" id="nav" class="nav-collapse" style="position: absolute;bottom: 0px;height:20px">
+    <button onclick="{location.href='home.html'}" style="width: 24%;height: 20px;color: red">home</button>
+    <button onclick="{location.href='about.html'}" style="width: 24%;height: 20px;color: red">about</button>
+    <button onclick="{location.href='projects.html'}" style="width: 24%;height: 20px;color: red">projects</button>
+    <button onclick="{location.href='pay.html'}" style="width: 24%;height: 20px;color: red">pay</button>
+  </div>
 <script>
     var navigation = responsiveNav("nav", {customToggle: ".nav-toggle"});
   </script>
