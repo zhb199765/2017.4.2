@@ -28,7 +28,7 @@ body {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   color: #37302a;
-  background: #fff;
+  background:#444;
   font: normal 100%/1.4 sans-serif;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 .nav-collapse .alt a {
-  background: #111;
+  background: #555;
 }
 
 @media screen and (min-width: 40em) {
